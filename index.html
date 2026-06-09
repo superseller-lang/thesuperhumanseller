@@ -669,17 +669,12 @@
         <div class="container">
             <h2>Get the Free Playbook + Join the Community</h2>
             <p class="lead-magnet-subtext">50 pages + 15 AI prompts + weekly tactics. Completely free.</p>
-            
-            <form class="email-form" id="playbook-form">
-                <input type="email" placeholder="your@email.com" id="email-input" required>
-                <button type="submit" id="playbook-btn">Get Playbook</button>
-            </form>
 
-            <p class="newsletter-text">Or join our weekly newsletter for tactics, frameworks, and AI selling strategies:</p>
-            
-            <!-- Beehiiv Form -->
+            <p class="newsletter-text">Enter your email to get the playbook and join our weekly newsletter for tactics, frameworks, and AI selling strategies:</p>
+
+            <!-- Beehiiv subscribe form (live) -->
             <div class="beehiiv-container">
-                <iframe src="https://embeds.beehiiv.com/6a65ce9e-1a75-4f07-a6df-41a7a9fdd0b7" data-key="6a65ce9e-1a75-4f07-a6df-41a7a9fdd0b7" height="320" frameborder="0" scrolling="no" style="width: 100%; border-radius: 8px;"></iframe>
+                <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="91e86da5-9c05-4c6e-a8dc-403b61077a07"></script>
             </div>
         </div>
     </section>
@@ -705,8 +700,8 @@
     <footer>
         <p>© 2025 The Superhuman Seller. Built by sellers, for sellers.</p>
         <p>
-            <a href="#lead-magnet">Newsletter</a> • 
-            <a href="#lead-magnet">Playbook</a> • 
+            <a href="#lead-magnet">Newsletter</a> •
+            <a href="#lead-magnet">Playbook</a> •
             <a href="#">Discord (Coming Soon)</a>
         </p>
     </footer>
@@ -756,36 +751,9 @@
             const items = document.querySelectorAll('.faq-item');
             items[index].classList.toggle('open');
         }
-
-        // Email Form Handler
-        document.getElementById('playbook-form').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const email = document.getElementById('email-input').value;
-            const btn = document.getElementById('playbook-btn');
-            
-            btn.disabled = true;
-            btn.textContent = 'Sending...';
-
-            try {
-                const response = await fetch('/api/send-playbook', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ email })
-                });
-
-                if (response.ok) {
-                    alert('✅ Check your email for the playbook!');
-                    document.getElementById('email-input').value = '';
-                } else {
-                    alert('✅ Check your email for the playbook!');
-                }
-            } catch (error) {
-                alert('✅ Thanks for signing up! Check your email.');
-            }
-
-            btn.disabled = false;
-            btn.textContent = 'Get Playbook';
-        });
     </script>
+
+    <!-- Beehiiv attribution tracking (forwards UTM params to beehiiv) -->
+    <script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
 </body>
 </html>
