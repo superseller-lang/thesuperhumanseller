@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Superhuman Seller - Free AI Sales Playbook</title>
+    <meta name="description" content="The free playbook for B2B reps using AI to build pipeline, score deals honestly with MEDDPICC, and forecast a number they can defend. Written by the operator who built a real production sales engine.">
     <style>
         * {
             margin: 0;
@@ -97,6 +98,20 @@
             margin: 0 auto;
         }
 
+        .hero-eyebrow {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #059669;
+            background-color: #ecfdf5;
+            border: 1px solid #a7f3d0;
+            padding: 6px 14px;
+            border-radius: 999px;
+            margin-bottom: 24px;
+        }
+
         .hero h1 {
             font-size: clamp(32px, 8vw, 56px);
             font-weight: bold;
@@ -113,7 +128,7 @@
             font-size: 18px;
             color: #4b5563;
             margin-bottom: 32px;
-            max-width: 700px;
+            max-width: 720px;
         }
 
         .hero-ctas {
@@ -185,6 +200,18 @@
             margin: 0 auto;
         }
 
+        .stats-label {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 15px;
+            max-width: 640px;
+            margin: 0 auto 40px;
+        }
+
+        .stats-label strong {
+            color: #e2e8f0;
+        }
+
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -218,8 +245,16 @@
             font-size: 36px;
             font-weight: bold;
             color: #1e293b;
-            margin-bottom: 48px;
+            margin-bottom: 16px;
             text-align: center;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: #4b5563;
+            font-size: 17px;
+            max-width: 680px;
+            margin: 0 auto 48px;
         }
 
         .benefits-grid {
@@ -258,7 +293,7 @@
             line-height: 1.6;
         }
 
-        /* Social Proof */
+        /* Social Proof / Credibility */
         .social-proof {
             background-color: #f9fafb;
             padding: 60px 20px;
@@ -274,7 +309,7 @@
             font-weight: bold;
             color: #1e293b;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 16px;
         }
 
         .testimonial-grid {
@@ -290,23 +325,17 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
 
+        .testimonial h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 10px;
+        }
+
         .testimonial p {
             color: #4b5563;
-            font-style: italic;
-            margin-bottom: 16px;
+            margin-bottom: 0;
             font-size: 14px;
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            color: #1e293b;
-            font-size: 14px;
-        }
-
-        .testimonial-role {
-            font-size: 12px;
-            color: #10b981;
-            font-weight: 500;
         }
 
         /* Lead Magnet Section */
@@ -330,9 +359,10 @@
         }
 
         .lead-magnet-subtext {
-            font-size: 14px;
-            color: #d1fae5;
-            margin-bottom: 32px;
+            font-size: 16px;
+            color: #ecfdf5;
+            margin-bottom: 8px;
+            font-weight: 600;
         }
 
         .lead-magnet p {
@@ -341,43 +371,14 @@
             margin-bottom: 32px;
         }
 
-        .email-form {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 32px;
-            flex-wrap: wrap;
-        }
-
-        .email-form input {
-            flex: 1;
-            min-width: 200px;
-            padding: 12px 16px;
-            border-radius: 8px;
-            border: none;
-            font-size: 14px;
-        }
-
-        .email-form button {
-            padding: 12px 24px;
-            background-color: #f59e0b;
-            color: #1e293b;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: background-color 0.2s;
-        }
-
-        .email-form button:hover {
-            background-color: #d97706;
-        }
-
-        .newsletter-text {
-            font-size: 14px;
-            color: #d1fae5;
-            margin-bottom: 24px;
-        }
-
         .beehiiv-container {
-            margin: 32px 0;
+            margin: 8px 0 24px;
+        }
+
+        .lead-magnet-fineprint {
+            font-size: 13px;
+            color: #d1fae5;
+            margin-bottom: 0;
         }
 
         /* FAQ Section */
@@ -502,15 +503,6 @@
                 font-size: 16px;
             }
 
-            .email-form {
-                flex-direction: column;
-            }
-
-            .email-form input,
-            .email-form button {
-                width: 100%;
-            }
-
             header .container {
                 flex-direction: column;
                 gap: 12px;
@@ -550,24 +542,25 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Stop Wasting <span class="hero-highlight">3 Hours a Day</span> on Research</h1>
-            <p>Join 500+ SDRs, BDRs, and AEs learning how to use AI to generate qualified pipeline, score deals, and stay relevant as sales changes.</p>
+            <span class="hero-eyebrow">Free 21-page playbook + 15 copy-paste prompts</span>
+            <h1>Hand the Busywork to AI. Be the Rep Who <span class="hero-highlight">Can't Be Automated.</span></h1>
+            <p>AI is sorting sales roles into builders, sellers, and the measurers it replaces. This is the free playbook for staying on the right side of that line: use AI to generate pipeline from real buying signals, score deals honestly with MEDDPICC, and forecast a number you can actually defend. Written by the operator who built a working sales engine — not another newsletter recycling LinkedIn advice.</p>
             <div class="hero-ctas">
-                <a href="#lead-magnet" class="btn-primary">Download Free Playbook</a>
-                <a href="#benefits" class="btn-secondary">See What You'll Learn</a>
+                <a href="#lead-magnet" class="btn-primary">Get the Free Playbook</a>
+                <a href="#benefits" class="btn-secondary">See What's Inside</a>
             </div>
             <div class="trust-indicators">
                 <div class="trust-item">
                     <span class="trust-icon">✓</span>
-                    <span>50-page playbook (free)</span>
+                    <span>21-page playbook (free)</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-icon">✓</span>
-                    <span>15 ready-to-use prompts</span>
+                    <span>15 copy-paste prompts</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-icon">✓</span>
-                    <span>Weekly newsletter (tactics)</span>
+                    <span>Weekly newsletter (real builds)</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-icon">✓</span>
@@ -580,22 +573,23 @@
     <!-- Stats -->
     <section class="stats">
         <div class="container">
+            <p class="stats-label">This isn't theory from someone who read about AI. There's a <strong>real production engine</strong> behind this brand, running on live pipeline every day:</p>
             <div class="stats-grid">
                 <div class="stat-item">
-                    <h3>500+</h3>
-                    <p>Sellers already joined</p>
+                    <h3>~12,700</h3>
+                    <p>Lines of production Python</p>
                 </div>
                 <div class="stat-item">
-                    <h3>50</h3>
-                    <p>Pages of free tactics</p>
+                    <h3>25+</h3>
+                    <p>Automation scripts shipped</p>
                 </div>
                 <div class="stat-item">
-                    <h3>15</h3>
-                    <p>AI prompts you can use today</p>
+                    <h3>15+</h3>
+                    <p>Cron jobs running 24/7</p>
                 </div>
                 <div class="stat-item">
-                    <h3>100%</h3>
-                    <p>Free forever</p>
+                    <h3>10</h3>
+                    <p>Tools wired together</p>
                 </div>
             </div>
         </div>
@@ -605,60 +599,59 @@
     <section class="benefits" id="benefits">
         <div class="container">
             <h2>What's Inside the Playbook</h2>
+            <p class="section-sub">One operating loop — find, research, reach out, qualify, advance, forecast — with AI doing the reading, writing, and remembering at every turn. Here's what you'll learn to run.</p>
             <div class="benefits-grid">
                 <div class="benefit">
                     <div class="benefit-icon">📊</div>
-                    <h3>Pipeline Generation</h3>
-                    <p>5 workflows to find, qualify, and email prospects in minutes instead of hours.</p>
+                    <h3>Pipeline From Signals, Not Lists</h3>
+                    <p>Stop dialing a static ICP list. Score accounts on real timing signals — funding, exec hires, breaches — then run the 3-pass outreach that builds every email on a reason, not a template.</p>
                 </div>
                 <div class="benefit">
                     <div class="benefit-icon">🎯</div>
-                    <h3>Deal Scoring</h3>
-                    <p>The MEDDPICC framework to predict which deals will close before your manager asks.</p>
+                    <h3>Honest MEDDPICC Deal Scoring</h3>
+                    <p>Let AI grade the call against all 8 dimensions, cite the exact quote, and flag what's missing. No happy ears. You find the holes in week two, not on the last day of the quarter.</p>
                 </div>
                 <div class="benefit">
                     <div class="benefit-icon">📈</div>
-                    <h3>Forecasting</h3>
-                    <p>Never miss forecast again. Probability-weighted pipeline math (no more guessing).</p>
+                    <h3>A Forecast You Can Defend</h3>
+                    <p>Tie close probability to qualification strength, not optimism. Probability-weighted pipeline math with a tight three-sentence narrative on every deal you commit.</p>
                 </div>
                 <div class="benefit">
                     <div class="benefit-icon">🧠</div>
-                    <h3>AI Prompts</h3>
-                    <p>15 ready-to-use Claude prompts for research, emails, objection handling, and more.</p>
+                    <h3>15 Copy-Paste Prompts</h3>
+                    <p>Pre-call briefs, signal scans, cold emails, objection handling, MEDDPICC gap analysis, weighted forecasts, and more — ready to paste into Claude or ChatGPT today.</p>
                 </div>
                 <div class="benefit">
                     <div class="benefit-icon">💰</div>
                     <h3>Career Insurance</h3>
-                    <p>Stay relevant as AI changes sales. Learn what reps with 10x productivity do.</p>
+                    <p>Why builders and sellers are safe while measurers get cut — and exactly which part of your week is "measurer work" hiding inside a seller's title. Stay on the right side of the line.</p>
                 </div>
                 <div class="benefit">
                     <div class="benefit-icon">🚀</div>
-                    <h3>90-Day Mastery Plan</h3>
-                    <p>Month-by-month roadmap to become the AI-powered seller at your company.</p>
+                    <h3>The 90-Day Mastery Plan</h3>
+                    <p>One change at a time. Month 1: research & reps. Month 2: rebuild prospecting. Month 3: a forecast your manager stops double-checking. A loop that runs whether you feel like it or not.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Social Proof -->
+    <!-- Credibility -->
     <section class="social-proof">
         <div class="container">
-            <h2>Why Sellers Are Joining</h2>
+            <h2>Why This Hits Different</h2>
+            <p class="section-sub">Most sales newsletters are written by people who've never shipped the thing they're selling you on. This one is the exception.</p>
             <div class="testimonial-grid">
                 <div class="testimonial">
-                    <p>"Went from 5 to 12 calls/day without sacrificing quality. This is a cheat code."</p>
-                    <p class="testimonial-author">Sarah - AE</p>
-                    <p class="testimonial-role">Acme Corp</p>
+                    <h4>Written by an operator, not an influencer</h4>
+                    <p>The method in this playbook is the same thinking behind a live stack: ~12,700 lines of production Python across 25+ scripts and 15+ cron jobs, processing real pipeline every day. The receipts are the credential.</p>
                 </div>
                 <div class="testimonial">
-                    <p>"Finally understand MEDDPICC. Already using it to coach my team. Game-changing."</p>
-                    <p class="testimonial-author">John - Sales Manager</p>
-                    <p class="testimonial-role">TechCorp</p>
+                    <h4>Every claim is something that actually runs</h4>
+                    <p>Post-call briefs and full MEDDPICC scores written to the CRM before a rep logs anything. A signal monitor that ranks accounts overnight. A reply watcher that pings every 15 minutes. Translated so you can run a lighter version with just a chat window.</p>
                 </div>
                 <div class="testimonial">
-                    <p>"Scared AI would replace me. Instead, it made me 3x more valuable to my manager."</p>
-                    <p class="testimonial-author">Alex - SDR</p>
-                    <p class="testimonial-role">StartupXYZ</p>
+                    <h4>The newsletter is where it gets specific</h4>
+                    <p>The playbook is the jumping-off point. The weekly drops break down the deeper builds — the actual workflows, scoring models, and outbound architecture — so a seller can use them without an engineering team. No fluff about "synergy."</p>
                 </div>
             </div>
         </div>
@@ -667,20 +660,16 @@
     <!-- Lead Magnet Section -->
     <section class="lead-magnet" id="lead-magnet">
         <div class="container">
-            <h2>Get the Free Playbook + Join the Community</h2>
-            <p class="lead-magnet-subtext">50 pages + 15 AI prompts + weekly tactics. Completely free.</p>
+            <h2>Get the Playbook. Free.</h2>
+            <p class="lead-magnet-subtext">21 pages + 15 copy-paste prompts + the weekly newsletter.</p>
+            <p>Drop your email below. The playbook lands in your inbox, and you're on the list for the deeper builds as they drop.</p>
 
-            <form class="email-form" id="playbook-form">
-                <input type="email" placeholder="your@email.com" id="email-input" required>
-                <button type="submit" id="playbook-btn">Get Playbook</button>
-            </form>
-
-            <p class="newsletter-text">Or join our weekly newsletter for tactics, frameworks, and AI selling strategies:</p>
-
-            <!-- Beehiiv Form -->
+            <!-- Beehiiv Form (the working capture — delivers the playbook via the welcome email) -->
             <div class="beehiiv-container">
                 <iframe src="https://embeds.beehiiv.com/6a65ce9e-1a75-4f07-a6df-41a7a9fdd0b7" data-key="6a65ce9e-1a75-4f07-a6df-41a7a9fdd0b7" height="320" frameborder="0" scrolling="no" style="width: 100%; border-radius: 8px;"></iframe>
             </div>
+
+            <p class="lead-magnet-fineprint">No spam. Unsubscribe anytime. Check your inbox right after you sign up.</p>
         </div>
     </section>
 
@@ -696,14 +685,14 @@
     <section class="cta-final">
         <div class="container">
             <h2>Ready to Become a Superhuman Seller?</h2>
-            <p>Start with the free playbook. No credit card. No spam. Just tactics that work.</p>
-            <a href="#lead-magnet" class="btn-primary">Download Now</a>
+            <p>Hand off the prep and admin. Walk into every conversation more prepared than the rep across the table — and have more conversations than they can fit in a day. Start with the free playbook.</p>
+            <a href="#lead-magnet" class="btn-primary">Get the Free Playbook</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 The Superhuman Seller. Built by sellers, for sellers.</p>
+        <p>© 2026 The Superhuman Seller. Built by an operator, for sellers.</p>
         <p>
             <a href="#lead-magnet">Newsletter</a> •
             <a href="#lead-magnet">Playbook</a> •
@@ -716,23 +705,27 @@
         const faqs = [
             {
                 question: 'Is this a sales pitch for a paid product?',
-                answer: 'No. The playbook is completely free. We\'re building an audience first. Future agents will be paid, but the playbook and newsletter are always free.'
+                answer: 'No. The 21-page playbook and the newsletter are completely free, and always will be. We\'re building an audience of sellers who care about doing this well. Down the road there will be paid AI agents and agent packs that automate the loop for you — but the playbook and the weekly tactics stay free.'
             },
             {
-                question: 'How often do you send emails?',
-                answer: 'Twice a week: Wednesday mornings (tactics) and Friday afternoons (roundup). Unsubscribe anytime. We hate spam too.'
+                question: 'Who\'s behind this?',
+                answer: 'An operator who built and runs a real sales-automation engine — roughly 12,700 lines of production Python across 25+ scripts and 15+ cron jobs, working live pipeline daily. Anonymous on purpose: it\'s about the method, not a logo. The method works regardless of whose name is on the door.'
             },
             {
-                question: 'Can I use these tactics immediately?',
-                answer: 'Yes. The playbook includes 15 ready-to-use Claude prompts you can copy/paste into ChatGPT or Claude right now. No waiting, no setup.'
+                question: 'Can I use these prompts immediately?',
+                answer: 'Yes. The playbook includes 15 copy-paste prompts — pre-call briefs, signal scans, cold emails, MEDDPICC gap analysis, weighted forecasts and more — that drop straight into Claude or ChatGPT. No setup, no waiting.'
             },
             {
                 question: 'Is this for SDRs only?',
-                answer: 'No. Built for SDRs, BDRs, AEs, and sales managers. Anyone selling in 2025 needs these tactics.'
+                answer: 'No. It\'s built for SDRs, BDRs, AEs, and sales managers. Anyone selling in 2026 who wants to direct AI instead of being replaced by it will get value from it.'
+            },
+            {
+                question: 'What will the paid agents be?',
+                answer: 'The productized version of the engine: AI agents and agent packs that run pieces of the loop — research, scoring, outreach, forecasting — without you. The free playbook teaches you to run the lighter, manual version first. Newsletter subscribers get first access when the agents drop.'
             },
             {
                 question: 'What\'s the catch?',
-                answer: 'No catch. We\'re building an audience of sellers who care about AI and productivity. Future agents will be paid, but we\'re starting with free value.'
+                answer: 'There isn\'t one. Free playbook, free newsletter. We\'re leading with real value so that when the paid agents arrive, you already know they work.'
             }
         ];
 
@@ -756,40 +749,6 @@
             const items = document.querySelectorAll('.faq-item');
             items[index].classList.toggle('open');
         }
-
-        // Email Form Handler
-        document.getElementById('playbook-form').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const email = document.getElementById('email-input').value;
-            const btn = document.getElementById('playbook-btn');
-
-            btn.disabled = true;
-            btn.textContent = 'Sending...';
-
-            const successMsg = '✅ You\'re in! Check your inbox — your welcome email with the playbook download link is on its way. If you don\'t see it within a minute, check your spam or Promotions tab.';
-
-            try {
-                const response = await fetch('/api/send-playbook', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ email })
-                });
-
-                if (response.ok) {
-                    alert(successMsg);
-                    document.getElementById('email-input').value = '';
-                } else {
-                    alert(successMsg);
-                    document.getElementById('email-input').value = '';
-                }
-            } catch (error) {
-                alert(successMsg);
-                document.getElementById('email-input').value = '';
-            }
-
-            btn.disabled = false;
-            btn.textContent = 'Get Playbook';
-        });
     </script>
 </body>
 </html>
