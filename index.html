@@ -664,9 +664,9 @@
             <p class="lead-magnet-subtext">21 pages + 15 copy-paste prompts + the weekly newsletter.</p>
             <p>Drop your email below. The playbook lands in your inbox, and you're on the list for the deeper builds as they drop.</p>
 
-            <!-- Beehiiv Form (the working capture — delivers the playbook via the welcome email) -->
+            <!-- Beehiiv subscribe form (v3 embed) — delivers the playbook via the welcome email -->
             <div class="beehiiv-container">
-                <iframe src="https://embeds.beehiiv.com/6a65ce9e-1a75-4f07-a6df-41a7a9fdd0b7" data-key="6a65ce9e-1a75-4f07-a6df-41a7a9fdd0b7" height="320" frameborder="0" scrolling="no" style="width: 100%; border-radius: 8px;"></iframe>
+                <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="91e86da5-9c05-4c6e-a8dc-403b61077a07"></script>
             </div>
 
             <p class="lead-magnet-fineprint">No spam. Unsubscribe anytime. Check your inbox right after you sign up.</p>
@@ -750,5 +750,8 @@
             items[index].classList.toggle('open');
         }
     </script>
+
+    <!-- Beehiiv attribution tracking (forwards UTM params to the form) -->
+    <script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
 </body>
 </html>
